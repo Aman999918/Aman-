@@ -22,7 +22,7 @@ const firebaseConfig = {
 
   projectId: "aman-safety",
 
-  storageBucket: "aman-safety.firebasestorage.app",
+  storageBucket: "aman-safety.appspot.com",
 
   messagingSenderId: "168805958858",
 
@@ -564,19 +564,19 @@ function renderProductsList(products) {
 
             <div class="flex justify-around p-4 border-t border-gray-200 dark:border-gray-700">
 
-                <button data-id="${product.id}" class="view-details-btn text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 p-2 rounded-full transition-colors duration-200" title="عرض التفاصيل">
+                <button data-id="${product.id}" class="view-details-btn text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 p-2 rounded-full transition-colors duration-200" t[...]
 
                     <span class="material-symbols-outlined">info</span>
 
                 </button>
 
-                <button data-id="${product.id}" class="edit-btn text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 p-2 rounded-full transition-colors duration-200" title="تعديل">
+                <button data-id="${product.id}" class="edit-btn text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 p-2 rounded-full transition-colors duration-200" title="[...]
 
                     <span class="material-symbols-outlined">edit</span>
 
                 </button>
 
-                <button data-id="${product.id}" class="delete-btn text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 p-2 rounded-full transition-colors duration-200" title="حذف">
+                <button data-id="${product.id}" class="delete-btn text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 p-2 rounded-full transition-colors duration-200" title="ح[...]
 
                     <span class="material-symbols-outlined">delete</span>
 
@@ -622,7 +622,7 @@ function renderProductsList(products) {
 
             if (productToActOn) {
 
-                openModal('طلب خدمة', `تم النقر على أيقونة طلب الخدمة للمنتج: ${productToActOn.name}.`, [{ text: 'موافق', className: 'bg-blue-500 text-white', onClick: closeModal }]);
+                openModal('طلب خدمة', `تم النقر على أيقونة طلب الخدمة للمنتج: ${productToActOn.name}.`, [{ text: 'موافق', className: 'bg-blue-500 text-white'[...]
 
             }
 
@@ -942,7 +942,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             closeModal();
 
-            openModal('إدارة الحساب', 'هنا يمكنك إضافة منطق لتسجيل الدخول أو الخروج أو إدارة الملف الشخصي.', [{ text: 'موافق', className: 'bg-blue-500 text-white', onClick: closeModal }]);
+            openModal('إدارة الحساب', 'هنا يمكنك إضافة منطق لتسجيل الدخول أو الخروج أو إدارة الملف الشخصي.', [{ text: 'موافق', cl[...]
 
         });
 
